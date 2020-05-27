@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<main>
+  <section class="section">
+    <div class="container content">
+      <h3>Published Papers</h3>
+    </div>
+  </section>
+  {% include papers.html type="published" %}
+  <section class="section">
+    <div class="container content">
+      <h3>Working Papers</h3>
+    </div>
+  </section>
+  {% include papers.html type="working" %}
+  <section class="section">
+    <div class="container content">
+      <h3>Work in Progress</h3>
+    </div>
+  </section>
+  {% include papers.html type="wip" %}
+  <section class="section">
+    <div class="container content">
+      <h3>Other Publications</h3>
+    </div>
+  </section>
+  {% include papers.html type="other" %}
+</main>
