@@ -1,0 +1,16 @@
+../.git
+../.gitignore
+../_originals
+../_site
+../assets/img
+../assets/pdf
+../css
+../Gemfile
+../Gemfile.lock
+.gitignore
+.prettierignore
+*.swp
+*.html
+yarn.lock
+
+../_layouts/default.html
