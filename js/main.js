@@ -1,26 +1,2 @@
-(function () {
-  if (document.readyState === "loading") {
-    return function (f) {
-      document.addEventListener("DOMContentLoaded", f);
-    };
-  }
-
-  return function (f) {
-    f();
-  };
-})()(function () {
-  document.documentElement.className = "";
-
-  var burger = document.getElementById("burger");
-  var navbar = document.getElementById("navbar");
-
-  if (burger !== null && navbar !== null) {
-    burger.addEventListener("click", function () {
-      if (navbar.className === "navbar-menu") {
-        navbar.className = "navbar-menu is-active";
-      } else {
-        navbar.className = "navbar-menu";
-      }
-    });
-  }
-});
+"use strict";("loading"===document.readyState?function(e){document.addEventListener("DOMContentLoaded",e)}:function(e){e()})(function(){document.documentElement.className="";var e=document.getElementById("burger"),n=document.getElementById("navbar");null!==e&&null!==n&&e.addEventListener("click",function(){null!==n&&("navbar-menu"===n.className?n.className="navbar-menu is-active":n.className="navbar-menu")})});
+//# sourceMappingURL=main.js.map

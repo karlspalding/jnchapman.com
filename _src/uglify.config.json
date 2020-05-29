@@ -1,0 +1,9 @@
+{
+  "compress": true,
+  "mangle": true,
+  "sourceMap": {
+    "content": "inline",
+    "url": "main.js.map",
+    "includeSources": true
+  }
+}

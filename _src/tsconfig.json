@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "lib": ["esnext", "DOM"],
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noResolve": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outFile": "/dev/stdout",
+    "sourceRoot": "./",
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true,
+    "target": "ES3"
+  },
+  "files": ["_typescript/main.ts"]
+}

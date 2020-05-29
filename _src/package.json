@@ -7,7 +7,9 @@
   "license": "MIT",
   "scripts": {
     "lint": "prettier --write '../**/*'",
-    "make": "node-sass _sass/main.scss --source-map true --source-map-embed true --source-map-contents true | postcss -o ../css/main.css"
+    "make:css": "node-sass _sass/main.scss --source-map true --source-map-embed true --source-map-contents true | postcss -o ../css/main.css",
+    "make:js": "yarn -s tsc | yarn uglifyjs --config-file uglify.config.json -o ../js/main.js",
+    "make": "yarn make:css && yarn make:js"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.2.0",
@@ -16,7 +18,9 @@
     "doiuse": "^4.2.0",
     "node-sass": "^4.14.1",
     "postcss-cli": "^7.1.1",
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.3",
+    "uglify-js": "^3.9.4"
   },
   "dependencies": {
     "bulma": "^0.8.2"
